@@ -1,0 +1,82 @@
+
+
+
+<!--CSS MediaQuery Syntax
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* ruleset for 320px - 480px */
+}
+-->
+
+<!-- 1st Ex
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}-->
+
+
+<!--Viewport Metatag
+<html lang="en"> 
+  <head> 
+    ...
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    ...
+  </head> 
+-->
+
+<!--
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .gallery-item .thumbnail{
+      width: 95%;
+    }
+-->
+
+<!--@media only screen and (max-width: 480px) {
+    .page-title{
+      width: 270px;
+    }
+    }-->
+
+For highresoliution
+<!--
+@media only screen and (min-resolution: 150dpi){
+.logo{
+  background-image: url("../img/spaceship@2x.png");
+}
+}-->
+
+
+<!--The website’s text needs to be larger for users who have small, low resolution screens.
+    
+    @media only screen and (max-width: 480px) and (min-resolution: 300dpi) {
+    /* CSS ruleset */
+}-->
+
+<!-- If only one of multiple media features in a media query must be met, media features can be separated in a comma separated list. SEPARATOR  useed in this example
+    @media only screen and (min-width: 480px), (orientation: landscape) {
+    /* CSS ruleset */
+}-->
+
+
+<!--
+    @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait){
+
+}-->
+
+<!--BReakPoints{
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
+}
+}-->
+
+<!--How would you explain the following media query to another front-end developer?
+
+    @media only screen and (min-width: 320px), (orientation: landscape) {
+  /* CSS rules */
+}
+
+This query applies to browsers with a width above 320px OR an orientation of landscape.
+
+Correct! Only one query needs to match, so either the browser’s width 
+is within the specific range of the media query’s constraints or the orientation should be landscape.-->
